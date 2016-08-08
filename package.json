@@ -1,11 +1,11 @@
 {
-  "name": "attrs.config",
+  "name": "tinyconfig",
   "version": "0.0.0",
-  "description": "configurator",
+  "description": "tinyconfig",
   "main": "lib/",
-  "repository": "attrs/attrs.config",
+  "repository": "attrs/tinyconfig",
   "author": "joje <joje.attrs@gmail.com>",
-  "homepage": "https://github.com/attrs/attrs.config",
+  "homepage": "https://github.com/attrs/tinyconfig",
   "license": "MIT",
   "keywords": [
     "config"

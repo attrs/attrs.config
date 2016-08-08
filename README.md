@@ -1,12 +1,12 @@
-# attrs.config
+# tinyconfig
 
 ```sh
-$ npm install attrs.config --save
+$ npm install tinyconfig --save
 ```
 
 ```sh
 // init
-var config = require('attrs.config')('myconfig', {autosave:true, mode:0777, encoding: 'utf8'});
+var config = require('tinyconfig')('myconfig', {autosave:true, mode:0777, encoding: 'utf8'});
 
 // set
 config('key', 'value');
