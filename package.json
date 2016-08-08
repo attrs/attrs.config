@@ -1,0 +1,18 @@
+{
+  "name": "attrs.config",
+  "version": "0.0.0",
+  "description": "configurator",
+  "main": "lib/",
+  "repository": "attrs/attrs.config",
+  "author": "joje <joje.attrs@gmail.com>",
+  "homepage": "https://github.com/attrs/attrs.config",
+  "license": "MIT",
+  "keywords": [
+    "config"
+  ],
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ]
+}
