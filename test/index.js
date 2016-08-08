@@ -1,4 +1,4 @@
-var config = require('..')('test', {autosave: false});
+var config = require('..')('111/test', {autosave: false});
 
 config('', 'empty');
 config('a.b.c', 1);

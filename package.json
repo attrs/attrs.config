@@ -14,5 +14,8 @@
     "lib",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }
