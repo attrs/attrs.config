@@ -19,15 +19,11 @@ console.log('config.subset("a")', config.subset('a'));
 console.log('config.subset("b")', config.subset('b'));
 console.log('config.subset("c")', config.subset('c'));
 console.log('config.subset("d")', config.subset('d'));
+console.log('config.keys()', config.keys());
+console.log('config.keys("a")', config.keys('a'));
 
 config.clear();
 
-console.log('config("")', config(''));
-console.log('config("q")', config('q'));
-console.log('config', JSON.stringify(config(), null, '  '));
-console.log('config', JSON.stringify(config.subset('a'), null, '  '));
-console.log('config', JSON.stringify(config.subset('c'), null, '  '));
-console.log('config', JSON.stringify(config.subset('d'), null, '  '));
-console.log('config', JSON.stringify(config.subset('e'), null, '  '));
+console.log('config.clear', config());
 
 config.save();

@@ -24,6 +24,8 @@ var o = config();
 var b = config.has('key');
 var value = config.get('key');
 var subset = config.subset('key');
+var keys = config.keys();
+var akeys = config.keys('a');
 config.set('key', 'value');
 config.set({
     'a': 'value',
