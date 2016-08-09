@@ -1,6 +1,6 @@
 {
   "name": "tinyconfig",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tinyconfig",
   "main": "lib/",
   "repository": "attrs/tinyconfig",
