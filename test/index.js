@@ -4,7 +4,6 @@ console.log(config.id);
 config('', 'empty');
 config('a.b.c', 1);
 config('a.b', 2);
-config.clear();
 config('a.b.d', 3);
 config('c.a', {g:4});
 config('c.b', 'test');
@@ -26,5 +25,6 @@ console.log('config.keys("a")', config.keys('a'));
 
 
 console.log('config.clear', config());
+console.log('config("test")', config('test'));
 
 config.save();
