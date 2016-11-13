@@ -1,30 +1,28 @@
-var config = require('..')(module, {autosave: false});
+var config = require('..')(module);
 
-console.log(config.id);
-config('', 'empty');
-config('a.b.c', 1);
-config('a.b', 2);
-config('a.b.d', 3);
-config('c.a', {g:4});
-config('c.b', 'test');
-config('d', 1);
-config({
-  q:1,
-  z:2
+config('a', {a:1,b:1});
+config('b', 1);
+config('c', null);
+config('d', 'd');
+config('e', [1,2,3]);
+
+console.log(config.keys());
+config.keys().forEach(function(k) {
+  console.log(k, config(k));
 });
 
-console.log('config("")', config(''));
-console.log('config("q")', config('q'));
-console.log('config', JSON.stringify(config(), null, '  '));
-console.log('config.subset("a")', config.subset('a'));
-console.log('config.subset("b")', config.subset('b'));
-console.log('config.subset("c")', config.subset('c'));
-console.log('config.subset("d")', config.subset('d'));
-console.log('config.keys()', config.keys());
-console.log('config.keys("a")', config.keys('a'));
+config.remove('a');
+config.remove('b');
+config.remove('c');
 
+console.log(config.keys());
+config.keys().forEach(function(k) {
+  console.log(k, config(k));
+});
 
-console.log('config.clear', config());
-console.log('config("test")', config('test'));
+config.clear();
 
-config.save();
+console.log(config.keys());
+config.keys().forEach(function(k) {
+  console.log(k, config(k));
+});
